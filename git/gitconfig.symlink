@@ -1,0 +1,26 @@
+[push]
+	default = simple
+[user]
+	name = mauvm
+	email = maurits@nerdieworks.nl
+[core]
+	editor = vim
+	excludesfile = ~/.dotfiles/git/gitignore.global
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)'
+	g = grep
+	a = add -A .
+	s = status -sb
+	c = commit -m
+	l = log
+	pl = pull
+	ps = push
+	d = diff
+[color]
+	ui = 1
+[help]
+	autocorrect = 1
+[hub]
+	protocol = https
+[url "https://"]
+	insteadOf = git://
