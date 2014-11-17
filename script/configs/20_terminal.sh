@@ -1,6 +1,7 @@
 #!/bin/bash
 
 configure_terminal () {
-	# TODO: Install and configure iTerm2
-	echo_error "Not yet implemented."
+	defaults write com.googlecode.iterm2 PrefsCustomFolder "$DOTFILES_PATH"
+	defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder -bool true
+	echo "Done."
 }
