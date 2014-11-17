@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Output formatting
+# Bootstrap script output formatting
 bs_ucwords() {
 	# Source: http://www.unix.com/shell-programming-and-scripting/122000-convert-first-character-each-word-upper-case.html
 	echo "$*" | awk '{for(i=0;++i<=NF;){OFS=(i==NF)?RS:FS;printf toupper(substr($i,0,1)) substr($i,2) OFS }}'
@@ -18,6 +18,19 @@ bs_echo_error () {
 	echo -e "    \033[31m$*\033[0m"
 }
 
+bs_write_status () {
+	while read line; do
+		bs_echo_status "$line"
+	done
+}
+
+bs_write_error () {
+	while read line; do
+		bs_echo_error "$line"
+	done
+}
+
+# Output formatting
 echo_success () {
 	echo -e "\033[32m$*\033[0m"
 }
@@ -28,17 +41,6 @@ echo_warning () {
 
 echo_error () {
 	echo "$*" 1>&2
-}
-
-bs_write_status () {
-	while read line; do
-		bs_echo_status "$line"
-	done
-}
-bs_write_error () {
-	while read line; do
-		bs_echo_error "$line"
-	done
 }
 
 # Symlinking

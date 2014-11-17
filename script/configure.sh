@@ -3,7 +3,7 @@
 # Prepare
 PREV_PATH=$(pwd)
 SCRIPT_PATH="$(cd $(dirname "${BASH_SOURCE[0]}") && pwd)"
-cd $SCRIPT_PATH/..
+DOTFILES_PATH="$SCRIPT_PATH/.."
 
 source "$SCRIPT_PATH/lib/func.sh"
 
@@ -12,6 +12,7 @@ for file in $SCRIPT_PATH/configs/*.sh; do
 	[ ! -f $file ] && continue
 
 	# Load script functions
+	cd "$DOTFILES_PATH"
 	source "$file"
 
 	# Get filename and remove sorting prefix and .sh extension
