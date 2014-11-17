@@ -10,6 +10,5 @@ Running `script/update.sh` will backup any changes made to the system. To keep t
 ## To Do:
 
 - Add .bashrc, .profile, and .bash_profile
-- Configure iTerm2
 - Add Vim plugins
 - Automatically run script/update.sh after brew (cask) install?
