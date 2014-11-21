@@ -4,5 +4,5 @@ set -x BESTRATING_PATH ~/Nerdieworks/Bestrating.nl/dev2.bestrating.nl/orderbehee
 set -x TAPME_PATH ~/Nerdieworks/TapMe\ Media/src
 set -x HANZE_PATH ~/Documents/Hanze/
 
-set -x DEV_TAPART_IP "192.168.178.117"
+set -x DEV_TAPART_IP "192.168.100.117"
 set -x DEV_PROJECT_NETWORK "local"
