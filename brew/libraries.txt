@@ -1,6 +1,7 @@
 ack
 ant
 autoconf
+boot2docker
 brew-cask
 cmake
 composer
