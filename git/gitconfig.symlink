@@ -6,6 +6,7 @@
 [core]
 	editor = vim
 	excludesfile = ~/.dotfiles/git/gitignore.global
+	ignorecase = false
 [alias]
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)'
 	g = grep
