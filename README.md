@@ -12,3 +12,5 @@ Running `script/update.sh` will backup any changes made to the system. To keep t
 - Add .bashrc, .profile, and .bash_profile
 - Add Vim plugins
 - Automatically run script/update.sh after brew (cask) install?
+- Add SDK paths/installs (Java, Golang, Android)
+
