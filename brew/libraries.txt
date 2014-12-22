@@ -14,12 +14,14 @@ fish
 freetype
 gdbm
 gettext
+git
 go
 grep
 hub
 icu4c
 ivy
 jpeg
+lftp
 libevent
 libpng
 libtool
@@ -46,5 +48,6 @@ tree
 unixodbc
 unrar
 vim
+wget
 xz
 zlib

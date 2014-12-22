@@ -25,3 +25,5 @@
 	protocol = https
 [url "https://"]
 	insteadOf = git://
+[credential]
+	helper = osxkeychain
