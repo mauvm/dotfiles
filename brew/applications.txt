@@ -1,6 +1,12 @@
-atom
+1password
 dropbox
 gas-mask
+google-chrome
+iterm2
 java
 seil
+spotify
+sublime-text
+telegram
+vagrant
 virtualbox
