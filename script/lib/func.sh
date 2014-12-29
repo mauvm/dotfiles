@@ -53,8 +53,9 @@ remove_symlink () {
 }
 
 create_symlink () {
-	local src=$(readlink -f "$1")
-	local dest=$(readlink -f "$2")
+	local readlink="$(brew --prefix coreutils)/bin/greadlink"
+	local src=$($readlink -f "$1")
+	local dest=$($readlink -f "$2")
 	[ -z "$src" ] && src="$1"
 	[ -z "$dest" ] && dest="$2"
 	if ln -s "$src" "$dest"; then
