@@ -9,7 +9,8 @@ Running `script/update.sh` will backup any changes made to the system. To keep t
 
 ## To Do:
 
-- Add .bashrc, .profile, and .bash_profile
+- Fix iTerm2 configuration
+- Add `.bashrc`, `.profile`, and `.bash_profile`
 - Add Vim plugins
 - Automatically run script/update.sh after brew (cask) install?
 - Add SDK paths/installs (Java, Golang, Android)
