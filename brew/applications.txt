@@ -5,8 +5,12 @@ google-chrome
 iterm2
 java
 seil
+sequel-pro
+skype
 spotify
 sublime-text
 telegram
+utorrent
 vagrant
 virtualbox
+vlc

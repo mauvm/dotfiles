@@ -1,10 +1,15 @@
 ack
 ant
 autoconf
+boot2docker
 brew-cask
 coreutils
+docker
 findutils
 fish
 git
+httpie
 hub
 node
+sudolikeaboss
+tree

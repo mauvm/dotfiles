@@ -21,3 +21,7 @@ set PATH $PATH $GOPATH/bin
 set -x IVY_HOME /usr/local/Cellar/ivy/2.3.0/libexec
 
 set EDITOR "vim"
+
+# Init boot2docker
+boot2docker shellinit | while read line; eval $line; end
+
