@@ -1,3 +1,4 @@
+ack
 brew-cask
 composer
 coreutils
