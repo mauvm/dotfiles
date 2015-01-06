@@ -1,3 +1,3 @@
 function gs
-	git s
+	git status
 end

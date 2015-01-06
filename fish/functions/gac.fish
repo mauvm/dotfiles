@@ -1,3 +1,4 @@
 function gac
-	g a; and g c $argv
+	ga;
+	gc $argv
 end

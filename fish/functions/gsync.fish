@@ -1,4 +1,4 @@
 function gsync
-	g pl --rebase
-	g ps $argv
+	gpr
+g push $argv
 end

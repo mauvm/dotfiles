@@ -1,8 +1,8 @@
 [push]
 	default = simple
 [user]
-	name = mauvm
-	email = maurits@nerdieworks.nl
+	name = MalcolmK
+	email = malcolm.k.x@gmail.com
 [core]
 	editor = vim
 	excludesfile = ~/.dotfiles/git/gitignore.global

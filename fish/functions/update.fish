@@ -1,14 +1,18 @@
 function update
-	echo "Updating.."
-	if test (sudo -n uptime 2>&1 | grep 'load' | wc -l ) -eq 0
-		echo "Enter password up front."
-		sudo -v
-	end
-	brew update
-	brew upgrade
-	brew cleanup
-	fish_update_completions
-	which composer; and composer self-update
-	flushcache
-	emptytrash
+    echo 'Clearing trash.'
+    emptytrash
+
+    echo 'Updating brew.'
+    brew update
+
+    echo 'Upgrading brew packages.'
+    brew upgrade
+
+    echo 'Running brew cleanup.'
+    brew cleanup
+
+    echo 'Updating fish completions.'
+    fish_update_completions
+
+    echo 'Update done.'
 end

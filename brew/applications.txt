@@ -1,6 +1,7 @@
-atom
-dropbox
+beardedspice
+flux
 gas-mask
-java
-seil
-virtualbox
+gimp
+spotify
+steam
+telegram
