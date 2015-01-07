@@ -1,4 +1,6 @@
 function update
+    sudo -v
+
     echo 'Clearing trash.'
     emptytrash
 
@@ -13,6 +15,13 @@ function update
 
     echo 'Updating fish completions.'
     fish_update_completions
+
+    echo 'Updating dotfiles.'
+    pushd
+    dotfiles
+    gac "Update settings"
+    gsync
+    popd
 
     echo 'Update done.'
 end
