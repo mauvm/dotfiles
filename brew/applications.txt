@@ -1,5 +1,6 @@
 1password
 dropbox
+filezilla
 gas-mask
 google-chrome
 iterm2

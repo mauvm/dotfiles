@@ -1,3 +1,3 @@
 function dev
-	cd ~/Development/
+	cd ~/Development/Temp;
 end
