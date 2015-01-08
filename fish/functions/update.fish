@@ -2,26 +2,40 @@ function update
     sudo -v
 
     echo 'Clearing trash.'
-    emptytrash
+        emptytrash
+    echo 'Trash cleared.'
 
     echo 'Updating brew.'
-    brew update
+        brew update
+    echo 'Brew updated.'
 
     echo 'Upgrading brew packages.'
-    brew upgrade
+        brew upgrade
+    echo 'Brew packages upgraded.'
 
     echo 'Running brew cleanup.'
-    brew cleanup
+        brew cleanup
+    echo 'Brew cleaned up.'
 
     echo 'Updating fish completions.'
-    fish_update_completions
+        fish_update_completions
+    echo 'Fish completions updated.'
 
     echo 'Updating dotfiles.'
-    pushd
-    dotfiles
-    gac "Update settings"
-    gsync
-    popd
+        pushd
+        dotfiles
+        gac "Update settings"
+        gsync
+        popd
+    echo 'Dotfiles updated.'
+
+    echo 'Updating composer.'
+        which composer; and composer self-update
+    echo 'Composer updated.'
+
+    echo 'Update locate database.'
+        sudo /usr/libexec/locate.updatedb
+    echo 'Locate database updated.'
 
     echo 'Update done.'
 end
