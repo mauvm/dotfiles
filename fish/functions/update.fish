@@ -5,6 +5,12 @@ function update
         emptytrash
     echo 'Trash cleared.'
 
+    sudo -v
+
+    echo 'Update locate database.'
+        sudo /usr/libexec/locate.updatedb
+    echo 'Locate database updated.'
+
     echo 'Updating brew.'
         brew update
     echo 'Brew updated.'
@@ -33,9 +39,6 @@ function update
         which composer; and composer self-update
     echo 'Composer updated.'
 
-    echo 'Update locate database.'
-        sudo /usr/libexec/locate.updatedb
-    echo 'Locate database updated.'
 
     echo 'Update done.'
 end
