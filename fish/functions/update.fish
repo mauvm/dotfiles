@@ -8,7 +8,7 @@ function update
     sudo -v
 
     echo 'Update locate database.'
-        sudo /usr/libexec/locate.updatedb
+        /usr/libexec/locate.updatedb
     echo 'Locate database updated.'
 
     echo 'Updating brew.'
