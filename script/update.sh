@@ -10,6 +10,9 @@ cd $SCRIPT_PATH/..
 ## Brew
 brew list > brew/libraries.txt
 brew cask list > brew/applications.txt
+
+# Sublime Text settings
+cat ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings
 # TODO: Auto-commit changes
 
 # Cleanup
