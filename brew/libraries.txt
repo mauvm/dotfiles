@@ -5,11 +5,13 @@ boot2docker
 brew-cask
 coreutils
 docker
+fig
 findutils
 fish
 git
 httpie
 hub
+libyaml
 node
 sudolikeaboss
 tree
