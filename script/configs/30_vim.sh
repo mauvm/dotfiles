@@ -1,8 +1,7 @@
 #!/bin/bash
 
 configure_vim () {
-	replace_symlink vim/vimrc.symlink "$HOME/.vimrc"
-
-	# Plugins
-	# TODO: Install and configure plugins
+    replace_symlink vim/vimrc.symlink "$HOME/.vimrc"
+    replace_symlink vim/vim.symlink/ "$HOME/.vim/"
 }
+
