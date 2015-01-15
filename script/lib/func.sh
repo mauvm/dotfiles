@@ -45,10 +45,9 @@ echo_error () {
 
 # Symlinking
 remove_symlink () {
-	if [ -f $1 ] || [ -h $1 ]; then
-		rm $1
-	else
-		return 1
+	if [ -f $1 ] || [ -L $1 ]; then
+		rm -f $1
+        return $?
 	fi
 }
 
@@ -62,10 +61,14 @@ create_symlink () {
 		echo "Symlinked $dest"
 	else
 		echo_error "Error symlinking $dest"
+        return 1
 	fi
 }
 
 replace_symlink () {
-	remove_symlink $2
+    if ! remove_symlink $2; then
+        echo_error "Error removing symlink $2"
+        return 1
+    fi
 	create_symlink $@
 }
