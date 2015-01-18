@@ -13,6 +13,8 @@ Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'digitaltoad/vim-jade'
+Plugin 'wavded/vim-stylus'
 
 " End of plugins
 call vundle#end()
