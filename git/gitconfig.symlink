@@ -1,7 +1,7 @@
 [push]
 	default = simple
 [user]
-	name = mauvm
+	name = Maurits van Mastrigt
 	email = maurits@nerdieworks.nl
 [core]
 	editor = vim
@@ -9,7 +9,7 @@
 	ignorecase = false
 	autocrlf = false
 [alias]
-	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)'
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr, %cn)%C(bold blue)'
 	g = grep
 	a = add -A .
 	s = status -sb
