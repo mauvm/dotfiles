@@ -6,6 +6,7 @@ gas-mask
 google-chrome
 iterm2
 java
+macports
 seil
 sequel-pro
 skype

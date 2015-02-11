@@ -1,6 +1,9 @@
 ack
+android-sdk
 ant
+aspell
 autoconf
+bison
 boot2docker
 brew-cask
 coreutils
@@ -11,7 +14,10 @@ fish
 git
 httpie
 hub
+jq
 libyaml
+mysql
 node
+openssl
 sudolikeaboss
 tree
