@@ -8,6 +8,7 @@ end
 
 # Variables
 set -x ANDROID_HOME (brew --prefix android-sdk)
+set -x GOPATH $HOME/Development/GoCode
 
 set PATH $DOTFILES_PATH/bin $PATH
 set PATH (brew --prefix coreutils)/libexec/gnubin $PATH
@@ -16,6 +17,7 @@ set PATH (brew --prefix coreutils)/libexec/gnubin $PATH
 # set PATH $PATH ./node_modules/.bin
 set PATH $PATH /opt/local/bin
 set PATH $PATH $ANDROID_HOME/platform-tools $ANDROID_HOME/tools
+set PATH $PATH $GOPATH/bin
 # set PATH $PATH $HOME/Developers/android-sdk-macosx/platform-tools $HOME/Developers/android-sdk-macosx/tools
 
 # set PATH $PATH /usr/local/go/bin
