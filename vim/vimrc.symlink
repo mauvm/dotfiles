@@ -8,9 +8,11 @@ Plugin 'gmarik/Vundle.vim'
 " Start of plugins
 Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'terryma/vim-multiple-cursors'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'godlygeek/tabular'
+
 Plugin 'tpope/vim-markdown'
+Plugin 'godlygeek/tabular'
 Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'fatih/vim-go'
 Plugin 'digitaltoad/vim-jade'
@@ -133,6 +135,20 @@ command! -nargs=1 -range SuperRetab <line1>,<line2>s/\v%(^ *)@<= {<args>}/\t/g
 set number				" Enable line numbers
 set scrolloff=5
 
-" Save file with enter
+" H: Go to beginning of line
+noremap H ^
+
+" J: expand-region
+map K <Plug>(expand_region_expand)
+
+" K: shrink-region
+map J <Plug>(expand_region_shrink)
+
+" L: Go to end of line
+noremap L g_
+
+" Enter: Save file with enter
 nnoremap <cr> :w<cr> 
 
+" F5: Compile Documark
+noremap <F5> :silent ! documark compile<CR>:redraw!<CR>

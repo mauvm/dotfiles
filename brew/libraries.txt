@@ -12,6 +12,8 @@ fig
 findutils
 fish
 git
+go
+htop-osx
 httpie
 hub
 jq
