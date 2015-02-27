@@ -7,7 +7,7 @@ Plugin 'gmarik/Vundle.vim'
 
 " Start of plugins
 Plugin 'kien/ctrlp.vim'
-Plugin 'scrooloose/nerdcommenter'
+" Plugin 'scrooloose/nerdcommenter'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'airblade/vim-gitgutter'
 
@@ -148,7 +148,13 @@ map J <Plug>(expand_region_shrink)
 noremap L g_
 
 " Enter: Save file with enter
-nnoremap <cr> :w<cr> 
+nnoremap <cr> :w<cr>
+
+" Cmd + C: Copy to clipboard
+vnoremap <leader>c :w !pbcopy<cr><cr>
+
+" Cmd + V: Pate from clipboard
+nnoremap <leader>v :r !pbpaste<cr>
 
 " F5: Compile Documark
-noremap <F5> :silent ! documark compile<CR>:redraw!<CR>
+noremap <F5> :silent !documark compile<cr> :redraw!<cr>
