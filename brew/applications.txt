@@ -8,6 +8,7 @@ gas-mask
 google-chrome
 iterm2
 java
+karabiner
 macports
 seil
 sequel-pro

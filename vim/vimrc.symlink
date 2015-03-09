@@ -34,6 +34,10 @@ set laststatus=2			" Always show statusbar
 
 colorscheme monokai
 
+" No Beep
+set noeb vb t_vb=
+au GUIEnter * set vb t_vb=
+
 " No folding in Markdown files
 let g:vim_markdown_folding_disabled=1
 
@@ -97,6 +101,9 @@ noremap <Right> <NOP>
 
 " Highlight the last search pattern
 set hlsearch
+
+" Case insensitive search
+set ic
 
 " Put these in an autocmd group, so that we can delete them easily.
 augroup vimrcEx
