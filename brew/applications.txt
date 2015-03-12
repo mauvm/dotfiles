@@ -13,6 +13,7 @@ macports
 seil
 sequel-pro
 skype
+slack
 spotify
 sublime-text
 telegram
