@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/Users/mauvm/Development/Bartimeus/server/www/app/database/seeds'
+let g:netrw_dirhist_2='/Users/mauvm/Development/Bartimeus/app/build/www'
+let g:netrw_dirhist_3='/Users/mauvm/Development/Bartimeus/server/www/public'
+let g:netrw_dirhist_4='/Users/mauvm/Development/Bartimeus/server/src/js/components/form'
+let g:netrw_dirhist_5='/Users/mauvm/.dotfiles/fish'

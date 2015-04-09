@@ -5,7 +5,6 @@
 	email = maurits@nerdieworks.nl
 [core]
 	editor = vim
-	excludesfile = ~/.dotfiles/git/gitignore.global
 	ignorecase = false
 	autocrlf = false
 [alias]
@@ -23,7 +22,7 @@
 [help]
 	autocorrect = 1
 [hub]
-	protocol = https
+	protocol = git
 [url "https://"]
 	insteadOf = git://
 [credential]

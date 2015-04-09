@@ -1,4 +1,5 @@
 1password
+android-file-transfer
 ccleaner
 dropbox
 filezilla
@@ -13,7 +14,6 @@ macports
 seil
 sequel-pro
 skype
-slack
 spotify
 sublime-text
 telegram
