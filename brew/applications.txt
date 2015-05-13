@@ -14,7 +14,6 @@ macports
 seil
 sequel-pro
 skype
-spotify
 sublime-text
 telegram
 utorrent
